@@ -1,0 +1,59 @@
+
+<form class ="complain-form">
+    <div class="row">
+        <div class ="col-md-6">
+            <label for="hostel" class="form-label">Hostel</label>
+            <select id = "hostel" class="form-select" aria-label="select example" >
+                
+                <option selected>Select Hostel</option>
+                <option value="1">Shivalik</option>
+                <option value="2">Vaishnavi</option>
+                <option value="3">New Basholi</option>
+                <option value="4">Old Basholi</option>
+                <option value="5">Trikuta</option>
+                <option value="6">Kailash</option>
+                <option value="7">Vindhyanchal</option>
+            
+            </select>
+        </div>
+        <div class ="col-md-6">
+            <label for="block" class="form-label">Block:</label>
+            <select id = "block" class="form-select" aria-label="select example" >
+                
+                <option selected>Select Block</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+                <option value="5">E</option>
+    
+            </select>
+        </div>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your Name"  aria-describedby="emailHelp">
+      
+    </div>
+    <div class="mb-3">
+      <label for="entrynum" class="form-label">Entry Number</label>
+      <input type="text" class="form-control" placeholder="Example : 19bec056" id="entrynum">
+    </div>
+    <div class="mb-3">
+        <label for="roomnum" class="form-label">Room No.</label>
+        <input type="text" class="form-control" placeholder="Enter your Room Number" id="roomnum">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone No.</label>
+        <input type="number" class="form-control" placeholder="705*******" id="phone">
+    </div>
+    <div class="mb-3">
+    <label for="query" class="form-label">Enter your Query</label>
+    <textarea class="form-control" placeholder="Comments" id="query" rows="5"></textarea>
+    </div>
+    
+        <button type="submit" class="btn btn-dark form-button">Submit</button>
+   
+</form>
+
+<%- include('partials/footer'); %>
