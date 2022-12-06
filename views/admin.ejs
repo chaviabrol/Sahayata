@@ -1,0 +1,49 @@
+<%- include('partials/header'); %>
+
+<li class="nav-item">
+    <a class="nav-link" aria-current="page" href="/">Logout</a>
+</li>
+</ul>
+
+</div>
+
+</div>
+</nav>
+<div class ="admin">
+    <h1>Complains</h1>
+</div>
+<div class="admin-body">
+    <table class="table table-light table-striped table-hover"> 
+        <tr>
+            <th>#</th>
+            <th>Issue</th>
+            <th>hostel_assigned</th>
+            <th>block </th>
+            <th>name</th>
+            <th>entry_num</th>
+            <th>room_num</th>
+            <th>Phone_num</th>
+            <th>additional_query</th>
+        </tr> 
+        <% newListItems.forEach(function(item) { %>
+            <tr>
+                <form action="/delete" method="post">
+                    <td><input type="checkbox" name="checkbox" value="<%= item._id%>" onchange="this.form.submit()"> </td>
+                </form>
+                  
+                    
+                <td><%= item.issue%></td>  
+                <td><%= item.hostel_assigned%></td> 
+                <td><%= item.block%></td>
+                <td><%= item.name%></td>
+                <td><%= item.entry_num%></td>
+                <td><%= item.room_num%></td>
+                <td><%= item.phone_num%></td>
+                <td><%= item.additional_query%></td>
+            </tr>
+        <% }) %>
+        
+    </table>
+
+
+</div>
