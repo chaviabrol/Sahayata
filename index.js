@@ -82,6 +82,6 @@ app.post('/login',function(req,res){
 });
 
 
-app.listen(PORT || 3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Server started successfully!!");
   })
